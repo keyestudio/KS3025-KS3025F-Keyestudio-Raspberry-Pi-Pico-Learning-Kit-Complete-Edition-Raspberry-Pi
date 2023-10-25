@@ -1,72 +1,53 @@
 # Project 18：Small Fan
 
-1.  **Introduction**
+## 1. Introduction
 
-In the hot summer, we need an electric fan to cool us down, so in this
-project, we will use a Raspberry Pi Pico to control 130 motor module and
-small blade to make a small fan.
+In the hot summer, we need an electric fan to cool us down, so in this project, we will use a Raspberry Pi Pico to control 130 motor module and small blade to make a small fan.
 
-2.  **Component Knowledge**
+## 2. Component Knowledge
 
 <table>
 <tbody>
 <tr class="odd">
-<td><img src="https://raw.githubusercontent.com/keyestudio/KS3025-KS3025F-Keyestudio-Raspberry-Pi-Pico-Learning-Kit-Complete-Edition-Raspberry-Pi/master/media/b18fe281156b29c44796f72222718d58.jpeg" style="width:2.37431in;height:0.94514in" /></td>
-<td><img src="https://raw.githubusercontent.com/keyestudio/KS3025-KS3025F-Keyestudio-Raspberry-Pi-Pico-Learning-Kit-Complete-Edition-Raspberry-Pi/master/media/bbed91c0b45fcafc7e7163bfeabf68f9.png" style="width:1.67014in;height:1.28472in" /></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td><img src="https://raw.githubusercontent.com/keyestudio/KS3025-KS3025F-Keyestudio-Raspberry-Pi-Pico-Learning-Kit-Complete-Edition-Raspberry-Pi/master/media/b18fe281156b29c44796f72222718d58.jpeg"  /></td>
+<td><img src="https://raw.githubusercontent.com/keyestudio/KS3025-KS3025F-Keyestudio-Raspberry-Pi-Pico-Learning-Kit-Complete-Edition-Raspberry-Pi/master/media/bbed91c0b45fcafc7e7163bfeabf68f9.png"  /></td>
+<td><img src="https://raw.githubusercontent.com/keyestudio/KS3025-KS3025F-Keyestudio-Raspberry-Pi-Pico-Learning-Kit-Complete-Edition-Raspberry-Pi/master/media/df3db6765ee8c86beafa8410e87dd50d.png"  /></td>
+<td><img src="https://raw.githubusercontent.com/keyestudio/KS3025-KS3025F-Keyestudio-Raspberry-Pi-Pico-Learning-Kit-Complete-Edition-Raspberry-Pi/master/media/7dcbd02995be3c142b2f97df7f7c03ce.png"  /></td>
 </tr>
 <tr class="even">
 <td>Raspberry Pi Pico*1</td>
 <td>Raspberry Pi Pico扩展板*1</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>Jumper Wore</td>
+<td>USB Cable*1</td>
 </tr>
 <tr class="odd">
-<td><img src="https://raw.githubusercontent.com/keyestudio/KS3025-KS3025F-Keyestudio-Raspberry-Pi-Pico-Learning-Kit-Complete-Edition-Raspberry-Pi/master/media/5fe5f8cd6e75e7f8d4ec71f54a4ac2f5.png" style="width:0.87292in;height:0.37083in" /></td>
-<td><img src="https://raw.githubusercontent.com/keyestudio/KS3025-KS3025F-Keyestudio-Raspberry-Pi-Pico-Learning-Kit-Complete-Edition-Raspberry-Pi/master/media/5eba8bae9e1d18b959ca425a9cc83fd2.jpeg" style="width:1.07569in;height:0.43472in" /></td>
-<td><img src="https://raw.githubusercontent.com/keyestudio/KS3025-KS3025F-Keyestudio-Raspberry-Pi-Pico-Learning-Kit-Complete-Edition-Raspberry-Pi/master/media/4e0b78edf6e4aeefa4c5191c606b2031.png" style="width:0.42847in;height:1.04931in" /></td>
-<td><img src="https://raw.githubusercontent.com/keyestudio/KS3025-KS3025F-Keyestudio-Raspberry-Pi-Pico-Learning-Kit-Complete-Edition-Raspberry-Pi/master/media/655e6c465cb423279e0908513a983711.png" style="width:0.85694in;height:0.75347in" /></td>
-<td><img src="https://raw.githubusercontent.com/keyestudio/KS3025-KS3025F-Keyestudio-Raspberry-Pi-Pico-Learning-Kit-Complete-Edition-Raspberry-Pi/master/media/df3db6765ee8c86beafa8410e87dd50d.png" style="width:0.77361in;height:0.76944in" /></td>
-<td><img src="https://raw.githubusercontent.com/keyestudio/KS3025-KS3025F-Keyestudio-Raspberry-Pi-Pico-Learning-Kit-Complete-Edition-Raspberry-Pi/master/media/7dcbd02995be3c142b2f97df7f7c03ce.png" style="width:1.05903in;height:0.56667in" /></td>
+<td><img src="https://raw.githubusercontent.com/keyestudio/KS3025-KS3025F-Keyestudio-Raspberry-Pi-Pico-Learning-Kit-Complete-Edition-Raspberry-Pi/master/media/5fe5f8cd6e75e7f8d4ec71f54a4ac2f5.png" /></td>
+<td><img src="https://raw.githubusercontent.com/keyestudio/KS3025-KS3025F-Keyestudio-Raspberry-Pi-Pico-Learning-Kit-Complete-Edition-Raspberry-Pi/master/media/5eba8bae9e1d18b959ca425a9cc83fd2.jpeg" /></td>
+<td><img src="https://raw.githubusercontent.com/keyestudio/KS3025-KS3025F-Keyestudio-Raspberry-Pi-Pico-Learning-Kit-Complete-Edition-Raspberry-Pi/master/media/4e0b78edf6e4aeefa4c5191c606b2031.png"  /></td>
+<td><img src="https://raw.githubusercontent.com/keyestudio/KS3025-KS3025F-Keyestudio-Raspberry-Pi-Pico-Learning-Kit-Complete-Edition-Raspberry-Pi/master/media/655e6c465cb423279e0908513a983711.png"  /></td>
 </tr>
 <tr class="even">
 <td>L293D Chip*1</td>
 <td>DC Motor*1</td>
 <td>Breadboard*1</td>
 <td>Fan*1</td>
-<td>Jumper Wore</td>
-<td>USB Cable*1</td>
 </tr>
 </tbody>
 </table>
 
-3.  **Component Knowledge:**
+## 3. Component Knowledge:
 
 ![](/media/5fe5f8cd6e75e7f8d4ec71f54a4ac2f5.png)
 
 **L293D Chip：**
 
-L293D is a direct current drive IC, which can be used to drive DC motor
-or stepper motor in some robot projects.
+L293D is a direct current drive IC, which can be used to drive DC motor or stepper motor in some robot projects.
 
-It has a total of 16 pins and can drive two-channel DC motors at the
-same time.
+It has a total of 16 pins and can drive two-channel DC motors at the same time.
 
-Its Input voltage range is 4.5 V \~ 36 V, the output current of per
-channel is MAX 600mA, which can drive inductive loads. What’s more, its
-input end can be directly connected and controlled by the single-chip
-microcomputer.
+Its Input voltage range is 4.5 V \~ 36 V, the output current of per channel is MAX 600mA, which can drive inductive loads. What’s more, its input end can be directly connected and controlled by the single-chip microcomputer.
 
-When driving a small DC motor, the control of two-channel motors and the
-forward and reverse rotation can be realized by changing the high and
-low level of the input terminal. There are many motor drive boards using
-L293D chips on the market, of course, we can also use it via simply
-connecting.
+When driving a small DC motor, the control of two-channel motors and the forward and reverse rotation can be realized by changing the high and low level of the input terminal. There are many motor drive boards using L293D chips on the market, of course, we can also use it via simply connecting.
 
 **L293D Pin out：**
 
@@ -162,81 +143,74 @@ connecting.
 </tbody>
 </table>
 
-4.  **Circuit diagram and wiring diagram：**
+## 4. Circuit diagram and wiring diagram：
 
 ![](/media/40a4235ff016ce29140f3c7cedab4610.png)
 
 ![](/media/5d8dc14f86142189160f2c30f4641bb8.png)
 
-5.  **Test Code**
+## 5. Test Code
 
-The code used in this project is saved in the file KS3025 Keyestudio
-Raspberry Pi Pico Learning Kit Complete Edition\\2. Windows System\\1.
-Python\_Tutorial\\2. Python Projects\\Project 18：Small Fan. You can move
-the code to anywhere, for example, we can save the code in the Disk(D),
-the route is home/pi/2. Projects
+The code used in this project is saved in the file <span style="color: rgb(255, 76, 65);">KS3025 Keyestudio Raspberry Pi Pico Learning Kit Complete Edition\\2. Windows System\\1.Python\_Tutorial\\2. Python Projects\\Project 18：Small Fan</span>. 
+You can move the code to anywhere, for example, we can save the code in the Disk(D), the route is <span style="color: rgb(255, 76, 65);">home/pi/2. Projects</span>.
 
 ![](/media/ae27830403a2f741aa9b725e5324c215.png)
 
-Open“Thonny”, click“This computer”→“D:”→“2. Python Projects”→“Project
-18：Small Fan”. And double left-click the“Project\_18\_ Small\_Fan.py”.
+Open“Thonny”, click“This computer”→“D:”→“2. Python Projects”→“Project 18：Small Fan”. And double left-click the“Project\_18\_ Small\_Fan.py”.
 
 ![](/media/0f9c372e372bd9456fd2ede6dcdc969d.png)
 
-<table>
-<tbody>
-<tr class="odd">
-<td><p>from machine import Pin</p>
-<p>import time</p>
-<p>#Pin of each section of L293D and set as output</p>
-<p>IN1_Pin = 17</p>
-<p>IN2_Pin = 16</p>
-<p>ENA_Pin = 18 #Control the speed of the motor</p>
-<p># speed：speed，0-100</p>
-<p># direction: Rotation direction,1 is clockwise,0 stops,-1 counterclockwise</p>
-<p># speed_pin：Pin number that controls the start and stop of the motor</p>
-<p>def motorRun(speed, direction, speed_pin, clockwise_pin, anti_clockwise_pin):</p>
-<p>if speed &gt; 100: speed=100</p>
-<p>if speed &lt; 0: speed=0</p>
-<p>in1 = machine.Pin(anti_clockwise_pin, machine.Pin.OUT)</p>
-<p>in2 = machine.Pin(clockwise_pin, machine.Pin.OUT)</p>
-<p>pwm = machine.PWM(machine.Pin(speed_pin))</p>
-<p>pwm.freq(50)</p>
-<p>pwm.duty_u16(int(speed/100*65535))</p>
-<p>if direction &lt; 0:</p>
-<p>in2.value(0)</p>
-<p>in1.value(1)</p>
-<p>if direction == 0:</p>
-<p>in2.value(0)</p>
-<p>in1.value(0)</p>
-<p>if direction &gt; 0:</p>
-<p>in2.value(1)</p>
-<p>in1.value(0)</p>
-<p>while True:</p>
-<p>motorRun(100, 1, ENA_Pin, IN2_Pin, IN1_Pin)</p>
-<p>time.sleep(5)</p>
-<p>motorRun(100, 0, ENA_Pin, IN2_Pin, IN1_Pin)</p>
-<p>time.sleep(2)</p>
-<p>motorRun(80, -1, ENA_Pin, IN2_Pin, IN1_Pin)</p>
-<p>time.sleep(5)</p>
-<p>motorRun(100, 0, ENA_Pin, IN2_Pin, IN1_Pin)</p>
-<p>time.sleep(2)</p></td>
-</tr>
-</tbody>
-</table>
+```Python
+from machine import Pin
+import time
 
-6.  **Test Result**
+#Pin of each section of L293D and set as output 
+IN1_Pin = 17
+IN2_Pin = 16
+ENA_Pin = 18 #Control the speed of the motor
+
+# speed：speed，0-100
+# direction: Rotation direction,1 is clockwise,0 stops,-1 counterclockwise
+# speed_pin：Pin number that controls the start and stop of the motor
+def motorRun(speed, direction, speed_pin, clockwise_pin, anti_clockwise_pin):
+    if speed > 100: speed=100
+    if speed < 0: speed=0
+    in1 = machine.Pin(anti_clockwise_pin, machine.Pin.OUT)
+    in2 = machine.Pin(clockwise_pin, machine.Pin.OUT)
+    pwm = machine.PWM(machine.Pin(speed_pin))
+    pwm.freq(50)
+    pwm.duty_u16(int(speed/100*65535))
+    if direction < 0:
+        in2.value(0)
+        in1.value(1)
+    if direction == 0:
+        in2.value(0)
+        in1.value(0)
+    if direction > 0:
+        in2.value(1)
+        in1.value(0)
+
+while True:
+    motorRun(100, 1, ENA_Pin, IN2_Pin, IN1_Pin)
+    time.sleep(5)
+    motorRun(100, 0, ENA_Pin, IN2_Pin, IN1_Pin)
+    time.sleep(2)
+    motorRun(80, -1, ENA_Pin, IN2_Pin, IN1_Pin)
+    time.sleep(5)
+    motorRun(100, 0, ENA_Pin, IN2_Pin, IN1_Pin)
+    time.sleep(2)
+```
+
+## 6. Test Result
     
-    Ensure that the Raspberry Pi Pico is connected to the
-    computer，click“![](/media/27451c8a9c13e29d02bc0f5831cfaf1f.png)Stop/Restart backend”.
+Ensure that the Raspberry Pi Pico is connected to the computer，click“![](/media/27451c8a9c13e29d02bc0f5831cfaf1f.png)Stop/Restart backend”.
 
 ![](/media/0f5c2fd5392a3c741ba4286962dbe4bb.png)
 
-Click“![](/media/da852227207616ccd9aff28f19e02690.png)Run current script”, the code starts
-executing, we will see that The small fan turns counterclockwise for 5
-seconds and stops for 2 seconds, and then turns clockwise for 5 seconds
-and stops for 2 seconds. Repeat this rule for 5 times and then the small
-fan stops. Press“Ctrl+C”or click“Stop/Restart backend”to exit the
-program.
+Click“![](/media/da852227207616ccd9aff28f19e02690.png)Run current script”, the code starts executing, we will see that The small fan turns counterclockwise for 5 seconds and stops for 2 seconds, and then turns clockwise for 5 secondsand stops for 2 seconds. Repeat this rule for 5 times and then the small fan stops. Press“Ctrl+C”or click ![](/media/27451c8a9c13e29d02bc0f5831cfaf1f.png) “Stop/Restart backend”to exit the program.
 
-# ![](/media/cbca76a93f21be2d0affc115271878e8.png)
+![](/media/cbca76a93f21be2d0affc115271878e8.png)
+
+
+
+
